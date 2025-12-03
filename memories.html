@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Подборка личных свидетельств и воспоминаний очевидцев Великой Отечественной войны 1941–1945. Фильтр по годам, регионам и тегам.">
+    <meta name="keywords" content="воспоминания, свидетельства, очевидцы войны, устная история, 1941-1945">
+    <meta property="og:title" content="Воспоминания очевидцев — Боль и память сквозь года">
+    <meta property="og:description" content="Личные истории людей, пережившие Великую Отечественную войну.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/memories.html">
+    <title>Воспоминания очевидцев | Боль и память сквозь года</title>
+    <link rel="canonical" href="https://example.com/memories.html">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" aria-label="Главная навигация">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="index.html" aria-label="На главную">
+                        <span class="logo-text">Боль и память</span>
+                        <span class="logo-subtitle">сквозь года</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="memories.html" class="active">Воспоминания</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-hero" aria-label="Заголовок страницы">
+            <div class="container">
+                <h1>Воспоминания очевидцев</h1>
+                <p>Личные свидетельства людей, пережившие войну. Документированные истории стойкости, боли и памяти.</p>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="memories-filters" aria-label="Фильтры">
+            <div class="container">
+                <div class="filter-group">
+                    <label for="yearFilter">Период:</label>
+                    <select id="yearFilter" class="filter-select" aria-label="Фильтр по годам">
+                        <option value="">Все годы</option>
+                        <option value="1941">1941</option>
+                        <option value="1942">1942</option>
+                        <option value="1943">1943</option>
+                        <option value="1944">1944</option>
+                        <option value="1945">1945</option>
+                    </select>
+
+                    <label for="regionFilter">Регион:</label>
+                    <select id="regionFilter" class="filter-select" aria-label="Фильтр по регионам">
+                        <option value="">Все регионы</option>
+                        <option value="ленинград">Ленинград (блокада)</option>
+                        <option value="москва">Московская область</option>
+                        <option value="волга">Поволжье</option>
+                        <option value="кавказ">Кавказ</option>
+                        <option value="украина">Украина</option>
+                        <option value="беларусь">Беларусь</option>
+                    </select>
+
+                    <label for="tagFilter">Тег:</label>
+                    <select id="tagFilter" class="filter-select" aria-label="Фильтр по тегам">
+                        <option value="">Все теги</option>
+                        <option value="армия">Фронт</option>
+                        <option value="тыл">Тыл</option>
+                        <option value="блокада">Блокада</option>
+                        <option value="оккупация">Оккупация</option>
+                        <option value="эвакуация">Эвакуация</option>
+                        <option value="медицина">Медицина</option>
+                    </select>
+
+                    <button id="resetFilters" class="btn btn-small">Сбросить фильтры</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memories Grid -->
+        <section class="memories-grid" aria-label="Воспоминания">
+            <div class="container">
+                <div id="memoriesContainer" class="grid">
+                    <!-- Карточки будут загружены из JSON -->
+                </div>
+                <p id="noResults" style="display: none; text-align: center; padding: 2rem;">
+                    По вашему запросу ничего не найдено. Попробуйте изменить фильтры.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Memory Modal -->
+    <div id="memoryModal" class="modal" aria-label="Модальное окно воспоминания" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Закрыть окно">&times;</button>
+            <div id="modalBody">
+                <!-- Содержимое будет добавлено JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="memories.html">Воспоминания</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="about.html#contact">Контакты</a></li>
+                    <li><a href="about.html#privacy">Условия использования</a></li>
+                    <li><a href="about.html#copyright">Авторские права</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Проект некомерческой направленности. Вся информация предоставляется в образовательных целях.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 «Боль и память сквозь года». Все права защищены.<br>
+            Сайт создан с уважением к памяти и истории. Мы прилагаем усилия для проверки всех публикуемых материалов.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>

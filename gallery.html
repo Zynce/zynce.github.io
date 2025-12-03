@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Галерея архивных фотографий Великой Отечественной войны 1941–1945 с лайтбоксом и атрибуцией источников.">
+    <meta name="keywords" content="фотографии войны, архивные изображения, лайтбокс, 1941-1945">
+    <meta property="og:title" content="Галерея фотографий — Боль и память сквозь года">
+    <meta property="og:description" content="Архивные фотографии Великой Отечественной войны с указанием источников.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/gallery.html">
+    <title>Галерея фотографий | Боль и память сквозь года</title>
+    <link rel="canonical" href="https://example.com/gallery.html">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" aria-label="Главная навигация">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="index.html" aria-label="На главную">
+                        <span class="logo-text">Боль и память</span>
+                        <span class="logo-subtitle">сквозь года</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="memories.html">Воспоминания</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-hero" aria-label="Заголовок страницы">
+            <div class="container">
+                <h1>Галерея фотографий</h1>
+                <p>Архивные изображения из различных источников. Щелкните на фото для увеличения.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section" aria-label="Фотографии">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Фотографии будут загружены из JSON -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Attribution Notice -->
+        <section class="attribution-notice" aria-label="Уведомление об источниках">
+            <div class="container">
+                <h2>Об источниках и авторских правах</h2>
+                <p>Все фотографии в галерее сопровождаются информацией об источнике. Мы прилагаем усилия для корректной атрибуции каждого изображения:</p>
+                <ul>
+                    <li>Фотографии из государственных архивов (РГАКФД, РГАСПИ и др.) размещаются в соответствии с правилами доступа к архивным материалам.</li>
+                    <li>Фотографии музеев указываются с ссылкой на источник и следуют условиям использования музея.</li>
+                    <li>Если вы считаете, что используется ваше авторское произведение без надлежащего разрешения, свяжитесь с нами через <a href="about.html#contact">форму обратной связи</a>.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-label="Лайтбокс для фотографий" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <p id="lightboxCaption"></p>
+                <p id="lightboxSource" class="source-attribution"></p>
+            </div>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Предыдущее изображение">&lt;</button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Следующее изображение">&gt;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="memories.html">Воспоминания</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="about.html#contact">Контакты</a></li>
+                    <li><a href="about.html#privacy">Условия использования</a></li>
+                    <li><a href="about.html#copyright">Авторские права</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Проект некомерческой направленности. Вся информация предоставляется в образовательных целях.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 «Боль и память сквозь года». Все права защищены.<br>
+            Сайт создан с уважением к памяти и истории. Мы прилагаем усилия для проверки всех публикуемых материалов.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>

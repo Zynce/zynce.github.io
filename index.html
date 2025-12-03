@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Боль и память сквозь года — сайт, посвящённый 80-й годовщине Победы в Великой Отечественной войне (1941–1945). Истории, свидетельства, архивные материалы.">
+    <meta name="keywords" content="Великая Отечественная война, 1941-1945, 80 лет Победе, воспоминания, история">
+    <meta property="og:title" content="Боль и память сквозь года — 80 лет Победе">
+    <meta property="og:description" content="Исторический проект, посвящённый памяти и истории Великой Отечественной войны.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
+    <meta name="author" content="Проект 'Боль и память сквозь года'">
+    <title>Боль и память сквозь года — 80 лет Победе (1941–1945)</title>
+    <link rel="canonical" href="https://example.com/">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Боль и память сквозь года",
+        "description": "Исторический проект о Великой Отечественной войне 1941-1945",
+        "url": "https://example.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://example.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" aria-label="Главная навигация">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="index.html" aria-label="На главную">
+                        <span class="logo-text">Боль и память</span>
+                        <span class="logo-subtitle">сквозь года</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="memories.html">Воспоминания</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" aria-label="Заголовок страницы">
+            <div class="hero-content">
+                <h1>Боль и память сквозь года</h1>
+                <p class="hero-subtitle">80 лет Победе в Великой Отечественной войне (1941–1945)</p>
+                <p class="hero-description">Исторический проект, посвящённый сохранению памяти, документированию свидетельств и изучению уроков войны</p>
+                <div class="hero-buttons">
+                    <a href="memories.html" class="btn btn-primary" aria-label="Читать воспоминания">Читать воспоминания</a>
+                    <a href="history.html" class="btn btn-secondary" aria-label="Исторический обзор">История событий</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-bg.jpg" alt="Архивное фото времён Великой Отечественной войны" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission" aria-label="Миссия проекта">
+            <div class="container">
+                <h2>О проекте</h2>
+                <p>Сайт «Боль и память сквозь года» создан для сохранения исторической памяти о Великой Отечественной войне 1941–1945 годов. Мы документируем личные свидетельства очевидцев, публикуем проверенные исторические факты и создаём доступное пространство для образования и размышления.</p>
+                <p>Наша задача — не политизировать историю, а уважительно хранить память о людях, событиях и уроках войны для следующих поколений.</p>
+            </div>
+        </section>
+
+        <!-- Recent Stories Section -->
+        <section class="recent-stories" aria-label="Последние истории">
+            <div class="container">
+                <h2>Последние воспоминания</h2>
+                <div class="stories-grid">
+                    <article class="story-card" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h3 itemprop="headline">Письма с фронта: голос из 1943 года</h3>
+                        <p class="story-date" itemprop="datePublished">3 декабря 2025</p>
+                        <p itemprop="description">Семья Петровых сохранила пакет писем от своего деда, красноармейца, отправленных с фронта в 1943–1944 годах. Письма рассказывают о быте, надежде и потерях товарищей.</p>
+                        <a href="memories.html#story-1" class="btn btn-small">Читать полностью</a>
+                    </article>
+                    <article class="story-card" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h3 itemprop="headline">Детство в блокаде: воспоминания Анны Сергеевны</h3>
+                        <p class="story-date" itemprop="datePublished">25 ноября 2025</p>
+                        <p itemprop="description">Анна Сергеевна делится редкими воспоминаниями о пережитой блокаде Ленинграда. Её рассказ о выживании, детской стойкости и восстановлении города.</p>
+                        <a href="memories.html#story-2" class="btn btn-small">Читать полностью</a>
+                    </article>
+                    <article class="story-card" itemscope itemtype="https://schema.org/NewsArticle">
+                        <h3 itemprop="headline">Медсестра на войне: 1941–1945</h3>
+                        <p class="story-date" itemprop="datePublished">10 ноября 2025</p>
+                        <p itemprop="description">Документированное интервью с бывшей военной медсестрой о работе в полевых госпиталях, сложности выбора и смысле служения.</p>
+                        <a href="memories.html#story-3" class="btn btn-small">Читать полностью</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memorial Dates Section -->
+        <section class="memorial-dates" aria-label="Памятные даты">
+            <div class="container">
+                <h2>Памятные даты</h2>
+                <div class="dates-timeline">
+                    <div class="date-item">
+                        <span class="date-year">22 июня 1941</span>
+                        <span class="date-event">Начало Великой Отечественной войны</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-year">8 сентября 1941</span>
+                        <span class="date-event">Начало блокады Ленинграда</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-year">5–6 декабря 1941</span>
+                        <span class="date-event">Контрнаступление под Москвой</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-year">23 августа 1942 – 2 февраля 1943</span>
+                        <span class="date-event">Сталинградская битва</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-year">27 января 1944</span>
+                        <span class="date-event">Полное снятие блокады Ленинграда</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-year">6 июня 1944</span>
+                        <span class="date-event">Открытие второго фронта в Нормандии</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-year">9 мая 1945</span>
+                        <span class="date-event">День Победы, капитуляция Германии</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta" aria-label="Призыв к действию">
+            <div class="container">
+                <h2>Присоединяйтесь к сохранению памяти</h2>
+                <p>У вас есть семейные истории, фотографии или документы о войне? Помогите нам расширить архив и передать память следующему поколению.</p>
+                <a href="about.html#contact" class="btn btn-primary" aria-label="Отправить материалы">Отправить свидетельство</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="memories.html">Воспоминания</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="about.html#contact">Контакты</a></li>
+                    <li><a href="about.html#privacy">Условия использования</a></li>
+                    <li><a href="about.html#copyright">Авторские права</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Проект некомерческой направленности. Вся информация предоставляется в образовательных целях.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 «Боль и память сквозь года». Все права защищены.<br>
+            Сайт создан с уважением к памяти и истории. Мы прилагаем усилия для проверки всех публикуемых материалов.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>
